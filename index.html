@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="dist/output.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&display=swap" rel="stylesheet" />
   </head>
-  <body class="h-[3000px]">
+  <body>
     <!-- Header Section Start -->
     <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-50">
       <div class="container">
@@ -22,10 +22,7 @@
               <span class="my-2 block h-[2px] w-[30px] bg-primary transition duration-300 ease-in-out"></span>
               <span class="my-2 block h-[2px] w-[30px] bg-primary transition duration-300 ease-in-out origin-bottom-left"></span>
             </button>
-            <nav
-              id="nav-menu"
-              class="hidden absolute py-5 lg:py-0 shadow-lg rounded-lg w-full max-w-[250px] top-full right-4 backdrop-blur-xl bg-white/90 lg:block lg:bg-transparent lg:max-w-full lg:shadow-none lg:static lg:rounded-none transition"
-            >
+            <nav id="nav-menu" class="hidden absolute py-5 lg:py-0 shadow-lg rounded-lg w-full max-w-[250px] top-full right-4 bg-white/90 lg:block lg:bg-transparent lg:max-w-full lg:shadow-none lg:static lg:rounded-none transition">
               <ul class="block lg:flex">
                 <li class="group">
                   <a href="#home" class="py-2 mx-8 text-dark group-hover:text-primary text-base flex">Home</a>
@@ -37,7 +34,7 @@
                   <a href="#portfolio" class="py-2 mx-8 text-dark group-hover:text-primary text-base flex">Porfolio</a>
                 </li>
                 <li class="group">
-                  <a href="" class="py-2 mx-8 text-dark group-hover:text-primary text-base flex">Contact</a>
+                  <a href="#contact" class="py-2 mx-8 text-dark group-hover:text-primary text-base flex">Contact</a>
                 </li>
               </ul>
             </nav>
@@ -197,7 +194,7 @@
     <section id="portfolio" class="pt-36 pb-32 bg-slate-200">
       <div class="container">
         <div class="w-full text-center mb-14">
-          <h4 class="text-primary font-bold uppercase text-lg mb-2">Portfolio</h4>
+          <h4 class="text-primary font-bold uppercase text-lg mb-2 lg:text-xl">Portfolio</h4>
           <h2 class="text-2xl text-dark font-semibold mb-2">Latest Projects</h2>
           <p class="text-slate-400">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, ipsa ducimus sed perspiciatis eos</p>
         </div>
@@ -307,6 +304,36 @@
       </div>
     </section>
     <!-- Portfolio Section End -->
+
+    <!-- Contact Section Start   -->
+    <section id="contact" class="pt-36 pb-36 bg-slate-700">
+      <div class="container">
+        <div class="w-full text-center lg:mb-12 mb-10">
+          <h4 class="font-bold text-white text-lg uppercase mb-2 lg:text-xl">Contact</h4>
+          <p class="text-slate-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, fuga?</p>
+        </div>
+        <div class="w-full text-center">
+          <a
+            href="mailto:akmalmaulfi@gmail.com"
+            class="px-8 py-3 lg:px-20 lg:py-4 bg-transparent text-[#EA4335] rounded-lg transition duration-300 ease-in-out border shadow-inner shadow hover:text-white hover:bg-primary hover:border-primary"
+          >
+            <svg width="20" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="inline-block fill-current">
+              <title>Gmail</title>
+              <path
+                d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section End   -->
+
+    <!-- Footer Start -->
+    <footer>
+      <div class="w-full bg-slate-800 h-10"></div>
+    </footer>
+    <!-- Footer End -->
 
     <script src="dist/js/script.js"></script>
   </body>
