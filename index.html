@@ -10,7 +10,7 @@
   </head>
   <body>
     <!-- Header Section Start -->
-    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-50">
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-50 dark:bg-slate-900 dark:bg-slate-900/50">
       <div class="container">
         <div class="flex items-center justify-between relative">
           <div class="px-4">
@@ -25,16 +25,26 @@
             <nav id="nav-menu" class="hidden absolute py-5 lg:py-0 shadow-lg rounded-lg w-full max-w-[250px] top-full right-4 bg-white/90 lg:block lg:bg-transparent lg:max-w-full lg:shadow-none lg:static lg:rounded-none transition">
               <ul class="block lg:flex">
                 <li class="group">
-                  <a href="#home" class="py-2 mx-8 text-dark group-hover:text-primary text-base flex">Home</a>
+                  <a href="#home" class="py-2 mx-8 text-dark group-hover:text-primary text-base flex dark:text-slate-100">Home</a>
                 </li>
                 <li class="group">
-                  <a href="#about" class="py-2 mx-8 text-dark group-hover:text-primary text-base flex">About</a>
+                  <a href="#about" class="py-2 mx-8 text-dark group-hover:text-primary text-base flex dark:text-slate-100">About</a>
                 </li>
                 <li class="group">
-                  <a href="#portfolio" class="py-2 mx-8 text-dark group-hover:text-primary text-base flex">Porfolio</a>
+                  <a href="#portfolio" class="py-2 mx-8 text-dark group-hover:text-primary text-base flex dark:text-slate-100">Porfolio</a>
                 </li>
                 <li class="group">
-                  <a href="#contact" class="py-2 mx-8 text-dark group-hover:text-primary text-base flex">Contact</a>
+                  <a href="#contact" class="py-2 mx-8 text-dark group-hover:text-primary text-base flex dark:text-slate-100">Contact</a>
+                </li>
+                <li class="flex items-center pl-8 mt-3 lg:mt-0">
+                  <span class="mr-2 text-sm text-slate-500">Light</span>
+                  <input type="checkbox" class="hidden" id="dark-toggle" />
+                  <label for="dark-toggle">
+                    <div class="w-9 h-5 bg-slate-500 rounded-full flex items-center cursor-pointer p-1">
+                      <div class="toggle-circle w-4 h-4 rounded-full bg-slate-200 transition duration-300 ease-in-out"></div>
+                    </div>
+                  </label>
+                  <span class="ml-2 text-sm text-slate-500">Dark</span>
                 </li>
               </ul>
             </nav>
@@ -45,17 +55,17 @@
     <!-- Header Section End -->
 
     <!-- Hero Section Start -->
-    <section id="home" class="pt-36 md:w-full h-screen flex justify-center items-center">
+    <section id="home" class="pt-36 md:w-full h-screen flex justify-center items-center dark:bg-slate-900">
       <div class="container">
         <div class="flex">
           <div class="w-full px-7 py-4 xl:text-center lg:-translate-y-[10%] text-center">
             <h1 class="text-base font-semibold text-primary md:text-xl">
               Hello everyone👋, my name's
-              <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl">Akmal Maulfi</span>
+              <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl dark:text-slate-200">Akmal Maulfi</span>
             </h1>
-            <h2 class="font-light text-slate-500 mb-4 lg:text-xl">Front End Developer</h2>
+            <h2 class="font-light text-slate-500 dark:text-slate-300 mb-4 lg:text-xl">Front End Developer</h2>
             <p class="mt-1 leading-relaxed font-medium text-slate-400 mb-10 xl:text-lg">only someone who likes to observe.</p>
-            <a href="#about" class="bg-primary px-8 py-3 rounded-full text-white text-base font-bold">Explore🔻</a>
+            <a href="#about" class="bg-primary px-8 py-3 rounded-full text-white dark:text-slate-200 text-base font-bold">Explore🔻</a>
           </div>
         </div>
       </div>
@@ -63,13 +73,13 @@
     <!-- Hero Section End -->
 
     <!-- About Section Start -->
-    <section class="pt-36 pb-32" id="about">
+    <section class="pt-36 pb-32 dark:bg-slate-900" id="about">
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full px-4 mb-11 lg:w-1/2">
             <h4 class="font-bold text-lg uppercase text-primary mb-5 lg:text-xl">About me</h4>
-            <h2 class="font-semibold text-2xl text-dark mb-3 lg:text-4xl">My Skills</h2>
-            <p class="text-base text-secondary lg:text-lg font-medium max-w-4xl mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt rem accusantium eum, distinctio alias vitae.</p>
+            <h2 class="font-semibold text-2xl text-dark mb-3 lg:text-4xl dark:text-slate-100">My Skills</h2>
+            <p class="text-base text-secondary lg:text-lg font-medium max-w-4xl mb-6 dark:text-slate-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt rem accusantium eum, distinctio alias vitae.</p>
             <div class="w-full">
               <ul class="flex items-center flex-wrap">
                 <li class="w-9 h-9 lg:w-11 lg:h-11 border flex items-center justify-center mr-3 mb-3 rounded-full p-1 text-slate-300 cursor-pointer hover:text-[#E34F26] hover:border-[#E34F26] transition duration-150 ease-in-out">
@@ -132,8 +142,8 @@
             </div>
           </div>
           <div class="w-full px-4 lg:w-1/2">
-            <h2 class="font-semibold text-2xl text-dark mb-3 lg:pt-12 lg:text-4xl">Get in Touch</h2>
-            <p class="text-secondary mb-6 lg:text-lg font-medium max-w-4xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt rem accusantium eum, distinctio alias vitae.</p>
+            <h2 class="font-semibold text-2xl text-dark mb-3 lg:pt-12 lg:text-4xl dark:text-slate-100">Get in Touch</h2>
+            <p class="text-secondary mb-6 lg:text-lg font-medium max-w-4xl dark:text-slate-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt rem accusantium eum, distinctio alias vitae.</p>
             <div class="flex items-center">
               <a
                 href="#"
