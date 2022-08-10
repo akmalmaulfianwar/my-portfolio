@@ -7,6 +7,13 @@
     <title>Akmal Maulfi Anwar</title>
     <link rel="stylesheet" href="dist/output.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&display=swap" rel="stylesheet" />
+    <script>
+      if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
   </head>
   <body>
     <!-- Header Section Start -->
@@ -22,7 +29,10 @@
               <span class="my-2 block h-[2px] w-[30px] bg-primary transition duration-300 ease-in-out"></span>
               <span class="my-2 block h-[2px] w-[30px] bg-primary transition duration-300 ease-in-out origin-bottom-left"></span>
             </button>
-            <nav id="nav-menu" class="hidden absolute py-5 lg:py-0 shadow-lg rounded-lg w-full max-w-[250px] top-full right-4 bg-white/90 lg:block lg:bg-transparent lg:max-w-full lg:shadow-none lg:static lg:rounded-none transition">
+            <nav
+              id="nav-menu"
+              class="hidden absolute py-5 lg:py-0 shadow-lg rounded-lg w-full max-w-[250px] top-full right-4 bg-white/90 lg:block lg:bg-transparent lg:max-w-full lg:shadow-none lg:static lg:rounded-none transition lg:dark:bg-transparent dark:bg-slate-900 dark:bg-gelap/90 dark:shadow-slate-600"
+            >
               <ul class="block lg:flex">
                 <li class="group">
                   <a href="#home" class="py-2 mx-8 text-dark group-hover:text-primary text-base flex dark:text-slate-100">Home</a>
@@ -201,26 +211,26 @@
     <!-- About Section End -->
 
     <!-- Portfolio Section Start -->
-    <section id="portfolio" class="pt-36 pb-32 bg-slate-200">
+    <section id="portfolio" class="pt-36 pb-32 bg-slate-200 dark:bg-slate-800">
       <div class="container">
         <div class="w-full text-center mb-14">
           <h4 class="text-primary font-bold uppercase text-lg mb-2 lg:text-xl">Portfolio</h4>
-          <h2 class="text-2xl text-dark font-semibold mb-2">Latest Projects</h2>
+          <h2 class="text-2xl text-dark font-semibold mb-2 dark:text-slate-100">Latest Projects</h2>
           <p class="text-slate-400">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, ipsa ducimus sed perspiciatis eos</p>
         </div>
         <div class="flex items-center justify-center">
           <div class="flex flex-wrap px-3 justify-center items-center lg:w-[90%]">
-            <div class="w-full bg-white rounded-lg overflow-x-hidden mb-10 md:w-72 lg:w-80 md:mr-8 shadow-lg">
+            <div class="w-full bg-white rounded-lg overflow-x-hidden mb-10 md:w-72 lg:w-80 md:mr-8 shadow-lg dark:bg-slate-700">
               <div class="w-full">
                 <img src="dist/img/1.jpg" alt="Project-1" class="w-full" />
               </div>
               <div class="p-4">
-                <h2 class="text-lg font-semibold text-dark mb-1">Kasirku.co</h2>
-                <p class="text-base text-secondary mb-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, obcaecati.</p>
+                <h2 class="text-lg font-semibold text-dark dark:text-slate-100 mb-1">Kasirku.co</h2>
+                <p class="text-base text-secondary mb-6 dark:text-slate-400">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, obcaecati.</p>
                 <div class="w-full flex flex-wrap items-center justify-center p-2">
                   <div class="w-40 h-10 flex justify-center items-center drop-shadow">
-                    <div class="w-full h-full bg-white flex justify-center items-center rounded-l overflow-x-hidden">
-                      <a href="#" class="w-full h-full flex justify-center items-center hover:text-white hover:bg-primary transition duration-300 ease-in-out border-r-2 box-border">
+                    <div class="w-full h-full flex justify-center items-center rounded-l overflow-x-hidden bg-white dark:bg-slate-800">
+                      <a href="#" class="w-full h-full flex justify-center items-center hover:text-white hover:bg-primary transition duration-300 ease-in-out border-r-2 dark:border-slate-700 box-border dark:text-slate-100">
                         <svg width="20" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="fill-current">
                           <title>GitHub</title>
                           <path
@@ -229,8 +239,8 @@
                         </svg>
                       </a>
                     </div>
-                    <div class="bg-white w-full h-full flex justify-center items-center rounded-r overflow-x-hidden">
-                      <a href="" class="w-full h-full flex justify-center items-center hover:text-white hover:bg-primary transition duration-300 ease-in-out">
+                    <div class="bg-white w-full h-full flex justify-center items-center rounded-r overflow-x-hidden dark:bg-slate-800">
+                      <a href="" class="w-full h-full flex justify-center items-center hover:text-white hover:bg-primary transition duration-300 ease-in-out dark:text-slate-100">
                         <svg width="20" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="fill-current">
                           <title>SitePoint</title>
                           <path
@@ -243,17 +253,17 @@
                 </div>
               </div>
             </div>
-            <div class="w-full bg-white rounded-lg overflow-x-hidden mb-10 md:w-72 lg:w-80 md:mr-8 shadow-lg">
+            <div class="w-full bg-white rounded-lg overflow-x-hidden mb-10 md:w-72 lg:w-80 md:mr-8 shadow-lg dark:bg-slate-700">
               <div class="w-full">
                 <img src="dist/img/1.jpg" alt="Project-1" class="w-full" />
               </div>
               <div class="p-4">
-                <h2 class="text-lg font-semibold text-dark mb-1">Kasirku.co</h2>
-                <p class="text-base text-secondary mb-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, obcaecati.</p>
+                <h2 class="text-lg font-semibold text-dark dark:text-slate-100 mb-1">Kasirku.co</h2>
+                <p class="text-base text-secondary mb-6 dark:text-slate-400">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, obcaecati.</p>
                 <div class="w-full flex flex-wrap items-center justify-center p-2">
                   <div class="w-40 h-10 flex justify-center items-center drop-shadow">
-                    <div class="w-full h-full bg-white flex justify-center items-center rounded-l overflow-x-hidden">
-                      <a href="#" class="w-full h-full flex justify-center items-center hover:text-white hover:bg-primary transition duration-300 ease-in-out border-r-2 box-border">
+                    <div class="w-full h-full bg-white flex justify-center items-center rounded-l overflow-x-hidden dark:bg-slate-900">
+                      <a href="#" class="w-full h-full flex justify-center items-center hover:text-white hover:bg-primary transition duration-300 ease-in-out border-r-2 dark:border-slate-700 box-border dark:text-slate-100">
                         <svg width="20" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="fill-current">
                           <title>GitHub</title>
                           <path
@@ -262,8 +272,8 @@
                         </svg>
                       </a>
                     </div>
-                    <div class="bg-white w-full h-full flex justify-center items-center rounded-r overflow-x-hidden">
-                      <a href="" class="w-full h-full flex justify-center items-center hover:text-white hover:bg-primary transition duration-300 ease-in-out">
+                    <div class="bg-white w-full h-full flex justify-center items-center rounded-r overflow-x-hidden dark:bg-slate-900">
+                      <a href="" class="w-full h-full flex justify-center items-center hover:text-white hover:bg-primary transition duration-300 ease-in-out dark:text-slate-100">
                         <svg width="20" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="fill-current">
                           <title>SitePoint</title>
                           <path
@@ -276,17 +286,17 @@
                 </div>
               </div>
             </div>
-            <div class="w-full bg-white rounded-lg overflow-x-hidden mb-10 md:w-72 lg:w-80 md:mr-8 shadow-lg">
+            <div class="w-full bg-white rounded-lg overflow-x-hidden mb-10 md:w-72 lg:w-80 md:mr-8 shadow-lg dark:bg-slate-700">
               <div class="w-full">
                 <img src="dist/img/1.jpg" alt="Project-1" class="w-full" />
               </div>
               <div class="p-4">
-                <h2 class="text-lg font-semibold text-dark mb-1">Kasirku.co</h2>
-                <p class="text-base text-secondary mb-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, obcaecati.</p>
+                <h2 class="text-lg font-semibold text-dark dark:text-slate-100 mb-1">Kasirku.co</h2>
+                <p class="text-base text-secondary mb-6 dark:text-slate-400">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, obcaecati.</p>
                 <div class="w-full flex flex-wrap items-center justify-center p-2">
                   <div class="w-40 h-10 flex justify-center items-center drop-shadow">
-                    <div class="w-full h-full bg-white flex justify-center items-center rounded-l overflow-x-hidden">
-                      <a href="#" class="w-full h-full flex justify-center items-center hover:text-white hover:bg-primary transition duration-300 ease-in-out border-r-2 box-border">
+                    <div class="w-full h-full bg-white flex justify-center items-center rounded-l overflow-x-hidden dark:bg-slate-800">
+                      <a href="#" class="w-full h-full flex justify-center items-center hover:text-white hover:bg-primary transition duration-300 ease-in-out border-r-2 dark:border-slate-700 box-border dark:text-slate-100">
                         <svg width="20" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="fill-current">
                           <title>GitHub</title>
                           <path
@@ -295,8 +305,8 @@
                         </svg>
                       </a>
                     </div>
-                    <div class="bg-white w-full h-full flex justify-center items-center rounded-r overflow-x-hidden">
-                      <a href="" class="w-full h-full flex justify-center items-center hover:text-white hover:bg-primary transition duration-300 ease-in-out">
+                    <div class="bg-white w-full h-full flex justify-center items-center rounded-r overflow-x-hidden dark:bg-slate-800">
+                      <a href="" class="w-full h-full flex justify-center items-center hover:text-white hover:bg-primary transition duration-300 ease-in-out dark:text-slate-100">
                         <svg width="20" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="fill-current">
                           <title>SitePoint</title>
                           <path
@@ -316,10 +326,10 @@
     <!-- Portfolio Section End -->
 
     <!-- Contact Section Start   -->
-    <section id="contact" class="pt-36 pb-36 bg-slate-700">
+    <section id="contact" class="pt-36 pb-36 bg-slate-700 dark:bg-slate-900">
       <div class="container">
         <div class="w-full text-center lg:mb-12 mb-10">
-          <h4 class="font-bold text-white text-lg uppercase mb-2 lg:text-xl">Contact</h4>
+          <h4 class="font-bold text-primary text-lg uppercase mb-2 lg:text-xl">Contact</h4>
           <p class="text-slate-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, fuga?</p>
         </div>
         <div class="w-full text-center">
@@ -338,7 +348,7 @@
 
     <!-- Footer Start -->
     <footer>
-      <div class="bg-slate-800 text-center flex items-center justify-center">
+      <div class="bg-slate-800 text-center flex items-center justify-center dark:bg-slate-900">
         <p class="text-sm text-slate-400 font-light py-4">Made with ❤️ by Akmal Maulfi</p>
       </div>
     </footer>

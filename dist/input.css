@@ -26,3 +26,17 @@ body {
 #dark-toggle:checked ~ label div.toggle-circle {
   @apply translate-x-3;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply dark:bg-slate-700;
+  background: white;
+  opacity: 50;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #8b5cf6;
+  border-radius: 10px;
+}
